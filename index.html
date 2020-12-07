@@ -1,0 +1,241 @@
+
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="twitter:card" content="summary"/>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="HITCON CTF 2020"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://ctf2020.hitcon.org"/>
+    <meta property="og:image" content="http://ctf.hitcon.org/img/og_img.png"/>
+    <meta property="og:site_name" content="HITCON CTF 2020"/>
+    <meta property="og:description" content="Online Jeopardy, Nov 28-29 2020"/>
+    <title>HITCON CTF 2020</title>
+
+    <link rel="shortcut icon" type="image/png" href="/static/v1.1/img/favicon.ico"/>
+    <link href="https://fonts.googleapis.com/css?family=Aldrich" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="/static/v1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/v1.1/css/main.css">
+
+    
+    
+  </head>
+  <body>
+    <nav id="top-nav" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">HITCON CTF 2020</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-navbar-collapse">
+          <ul class="nav navbar-nav">
+            
+              <li><a href="/dashboard/">Dashboard</a></li>
+            
+	    <li><a href="/dashboard/scoreboard">Scoreboard</a></li>
+	    
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right">
+	    
+            <li>
+              <p id="timer" class="navbar-text"></p>
+              <input type="hidden" id="contest_start_time" value="1606528800.0">
+              <input type="hidden" id="contest_end_time" value="1606658400.0">
+              <input type="hidden" id="current_time" value="1606722874.1913245">
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      
+<div id="particles-js">
+</div>
+
+<div id="home-masthead">
+  <div class="container">
+    <div class="title">HITCON CTF 2020</div>
+    <div class="subtitle">
+        UTC 11/28 02:00 ~ 11/29 14:00
+    </div>
+    <div class="subtitle">IRC: irc.freenode.net #hitconctf</div>
+  </div>
+</div>
+
+<div id="content" class="container">
+<div id="contest-info">
+
+  <div class="col-lg-6">
+    <h2>競賽說明</h2>
+    <ul>
+      <li>為 36 小時的線上 Jeopardy 形式 CTF</li>
+      <li>競賽採取積分累計制，依分數高低進行排名<br>
+          同分者，依最後一次正確提交的時間判定。</li>
+      <li>每道題目的分數將會根據解題隊伍數即時進行動態調整</li>
+      <li>Flag 形式為: <code>hitcon{printable ascii+}</code></li>
+      <li>國內排名前 3 名的隊伍，將會被邀請至參加另一場在 12/12, 12/13 舉辦於台北文創的 HITCON x Balsn 資安交流經典賽</li>
+      <li>冠軍隊伍將獲得 <a href="https://oooverflow.io/dc-ctf-2021-quals/">DEF CON CTF 2021</a> 決賽資格</li>
+    </ul>
+  </div>
+
+  <div class="col-lg-6">
+    <h2>Contest Information</h2>
+    <ul>
+      <li>Contest is online jeopardy style CTF for 36 hours.</li>
+      <li>Solving each challenge will get certain points. Teams will be ranked by total points.<br>
+        If the score are the same, the ranking will be determined by the time of last correct submission.</li>
+      <li>The points of each challenge will be dynamically adjusted based on the number of solved teams.</li>
+      <li>Flag format: <code>hitcon{printable ascii+}</code></li>
+      <li>Top 3 Taiwan teams will be invited to another on-site competition on December 12th and 13th in Taipei, Taiwan</li>
+      <li>The champion of HITCON CTF 2020 will be qualified for <a href="https://oooverflow.io/dc-ctf-2021-quals/">DEF CON CTF 2021</a>.</li>
+    </ul>
+  </div>
+
+  <div class="col-lg-6">
+    <h2>競賽時間</h2>
+    <ul>
+      <li>
+        11/28(六) 10:00 - 11/29(日) 22:00
+        <a href="https://ctftime.org/event/1136"><img alt="CTFtime" src="https://ctftime.org/favicon.png"></a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="col-lg-6">
+    <h2>Contest Time</h2>
+    <ul>
+      <li>
+        Nov 28 10:00 AM ~ Nov 29 22:00 AM (GMT+8, 36 hours)
+        <a href="https://ctftime.org/event/1136"><img alt="CTFtime" src="https://ctftime.org/favicon.png"></a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="col-lg-6">
+    <h2>競賽獎金</h2>
+    <ul>
+      <li>第一名獎金: $8192 USD</li>
+      <li>第二名獎金: $4096  USD</li>
+      <li>第三名獎金: $2048  USD</li>
+      <li>臺灣隊伍特殊獎: $1024 USD</li>
+    </ul>
+  </div>
+
+  <div class="col-lg-6">
+    <h2>Awards</h2>
+    <ul>
+      <li>1st place: $8192 USD</li>
+      <li>2nd place: $4096  USD</li>
+      <li>3rd place: $2048  USD</li>
+      <li>Special award for Top 1 Taiwan team: $1024 USD</li>
+    </ul>
+  </div>
+
+  <div class="col-lg-6">
+    <h2>比賽注意事項</h2>
+    <ul>
+      <li>競賽期間，做出以下違規事項者將直接取消資格:</li>
+      <ul>
+        <li>進行任何破壞競賽公平公正原則之行為</li>
+        <li>散播、與其它隊伍交換解法或 Flag</li>
+        <li>除競賽中提供的題目外，對競賽系統、參賽者及其它人員進行攻擊</li>
+      </ul>
+      <li>每位參賽者最多僅能參與一個隊伍</li>
+    </ul>
+  </div>
+
+  <div class="col-lg-6">
+    <h2>Contest Rules</h2>
+    <ul>
+      <li>During the contest, any of the following behaviors will lead to disqualification:</li>
+      <ul>
+        <li>Any behavior that compromises the fairness of contest</li>
+        <li>Publishing, exchanging challenge solutions or Flags</li>
+        <li>Attacking any personnel, including participants and non-participants, or the contest system itself</li>
+      </ul>
+      <li>Each player can only join one team.</li>
+    </ul>
+  </div>
+
+  <div class="col-lg-6">
+    <h2>保留權利</h2>
+    <p>主辦單位可依狀況調整競賽的內容、流程及規則。</p>
+  </div>
+  <div class="col-lg-6">
+    <h2>Rights Reserved</h2>
+    <p>Organizers may rearrange/modify contest challenges, proceedings, and rules.</p>
+  </div>
+
+  <div class="col-lg-6">
+    <h2>Advisor</h2>
+    <p>
+      <a href="http://www.moeaidb.gov.tw/"><img class="col-lg-8 col-xs-6" src="https://ctf.hitcon.org/img/idb.png" title="Industrial Development Bureau"></a>
+    </p>
+  </div>
+
+  <div class="col-lg-6 col-xs-12">
+    <h2>Hosted by</h2>
+    <a href="https://hacker.org.tw/"><img class="col-lg-6 col-xs-6" src="https://ctf.hitcon.org/img/hitcon.png" title="Hacks in Taiwan Association"></a>
+    <a href="https://www.itri.org.tw/"><img class="col-lg-6 col-xs-6" src="https://ctf.hitcon.org/img/itri.png" title="Industrial Technology Research Institute"></a>
+  </div>
+
+</div><!-- #contest-info -->
+</div>
+
+
+      <hr>
+      <footer id="footer">
+        <p class="text-muted">&copy; HITCON CTF Team 2020</p>
+	<p class="text-muted">Contact: hitconctfcontact@hitcon.org</p>
+      </footer>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+      <script src="/static/v1.1/js/bootstrap.min.js"></script>
+      <script src="/static/v1.1/js/markdown-it.min.js"></script>
+      <script src="/static/v1.1/js/moment.min.js"></script>
+      <script src="/static/v1.1/js/main.js"></script>
+      <script>
+        var refresh_interval = 600 * 1000;
+        $(document).ready(function(){
+          $('[data-toggle="tooltip"]').tooltip();
+        });
+        
+        var team_id = -1;
+        
+
+        var current_time = 1606722874.1913245;
+        var contest_end_time = 1606658400.0;
+        var contest_end = current_time >= contest_end_time;
+      </script>
+
+      
+<script src="/static/v1.1/js/particles.min.js"></script>
+<script>
+  particlesJS.load('particles-js', "/static/v1.1/js/particles.json", function(){});
+</script>
+
+
+      
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-GPYFBDVNMH"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-GPYFBDVNMH');
+      </script>
+      
+  </body>
+</html>
